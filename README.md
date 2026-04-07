@@ -5,6 +5,9 @@
 </h1>
 
 <p align="center">
+  <a href="https://fceruzzi.github.io" target="_blank">
+    <img src="https://img.shields.io/badge/Website-00BCD4?style=for-the-badge&logo=google-chrome&logoColor=white" />
+  </a>
   <a href="https://www.linkedin.com/in/francescoceruzzi" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
   </a>
@@ -26,7 +29,7 @@ ceruzzi = {
     "email":         "francescoceruzzi@gmail.com",
     "certification": "CEH — Certified Ethical Hacker (EC-Council)",
     "education":     "M.Sc. Computer Engineering — University of Basilicata",
-    "languages":     ["Italian (native)", "English (fluent)", "French (basic)"],
+    "languages":     ["Italian (native)", "English (fluent)", "French (basic)", "German (basic)"],
     "passion":       "Ethical Hacking & Innovation 🔐"
 }
 ```
@@ -57,11 +60,11 @@ At Sogei I perform:
 
 | Badge | Certification | Issuer | Date |
 |---|---|---|---|
-| 🥇 | CEH — Certified Ethical Hacker | EC-Council | June 2023 |
-| 🤖 | SciRoc Challenge — **Winner** | Sign Language Interpretation Task | September 2021 |
 | ☕ | Spring Security | Spring | January 2024 |
 | 🔬 | HCL AppScan DAST | HCL Software | March 2024 |
 | 🛡️ | Checkmarx SAST Certified Engineer | Checkmarx | July 2024 |
+| 🥇 | CEH — Certified Ethical Hacker | EC-Council | June 2023 |
+| 🤖 | SciRoc Challenge — **Winner** | Sign Language Interpretation Task | September 2021 |
 
 ---
 
@@ -73,17 +76,17 @@ Educational vulnerable lab for testing and understanding **Cross-Site Scripting*
 ### 💉 [SQL Injection Lab](https://github.com/FCeruzzi/sql-injection-lab)
 Comprehensive vulnerable lab covering **7 types of SQL Injection** attacks in Java, built with Spring Boot & JDBC for educational purposes.
 
-### 🤖 SciRoc Challenge 2021 — Winner
+### 🤖 [SciRoc Challenge 2021 — Winner](https://github.com/FCeruzzi/SciRocChallenge)
 **1st place** at the Smart City Robotics Challenge for real-time **sign language interpretation** using Machine Learning and Computer Vision.
 
-### 🛰️ SAR Image Reconstruction
-Automated tool for studying **Synthetic Aperture Radar** images — analyzes building footprints and their changes over time using TerraSAR-X and Sentinel data with unsupervised detection algorithms.
+### 🧠 [Pixel-wise Segmentation *(Master's Thesis)*](https://github.com/FCeruzzi/rs_ply_generator)
+Pixel-wise segmentation of workpiece images for **automotive applications** using the SegNet deep learning architecture, with custom point cloud generation tools.
 
-### 🎮 Jet Ski Nitro
+### 🎮 [Jet Ski Nitro](https://github.com/FCeruzzi/JetSki)
 Third-person **racing game** built with C++ and OpenGL, featuring a jet ski in a tropical setting.
 
-### 🧠 Pixel-wise Segmentation *(Master's Thesis)*
-Pixel-wise segmentation of workpiece images for **automotive applications** using the SegNet deep learning architecture, with custom point cloud generation tools.
+### 🛰️ [SAR Image Reconstruction](https://github.com/FCeruzzi/triennale)
+Automated tool for studying **Synthetic Aperture Radar** images — analyzes building footprints and their changes over time using TerraSAR-X and Sentinel data with unsupervised detection algorithms.
 
 ---
 
@@ -128,17 +131,8 @@ Pixel-wise segmentation of workpiece images for **automotive applications** usin
 
 ---
 
-## 📊 GitHub Stats
-
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=FCeruzzi&show_icons=true&theme=tokyonight&hide_border=true" height="160" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=FCeruzzi&layout=compact&theme=tokyonight&hide_border=true" height="160" />
-</p>
-
----
-
-<p align="center">
-  <i>"Security is not a product, but a process."</i> — Bruce Schneier
+  <i>"Real, until declared as integer"</i>
 </p>
 
 <p align="center">
