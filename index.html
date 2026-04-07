@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Francesco Ceruzzi — Cybersecurity Auditor</title>
+    <meta name="description" content="Portfolio of Francesco Ceruzzi — Cybersecurity Auditor, Ethical Hacker, CEH">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Particle Canvas Background -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">{</span>
+                <span class="logo-name">FC</span>
+                <span class="logo-bracket">}</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about" class="nav-link"><span class="nav-number">01.</span> <span data-i18n="nav.about">About</span></a></li>
+                <li><a href="#experience" class="nav-link"><span class="nav-number">02.</span> <span data-i18n="nav.experience">Experience</span></a></li>
+                <li><a href="#projects" class="nav-link"><span class="nav-number">03.</span> <span data-i18n="nav.projects">Projects</span></a></li>
+                <li><a href="#skills" class="nav-link"><span class="nav-number">04.</span> <span data-i18n="nav.skills">Skills</span></a></li>
+                <li><a href="#tools" class="nav-link"><span class="nav-number">05.</span> <span data-i18n="nav.tools">Tools</span></a></li>
+                <li><a href="#certifications" class="nav-link"><span class="nav-number">06.</span> <span data-i18n="nav.certifications">Certifications</span></a></li>
+                <li><a href="#education" class="nav-link"><span class="nav-number">07.</span> <span data-i18n="nav.education">Education</span></a></li>
+                <li><a href="#contact" class="nav-link"><span class="nav-number">08.</span> <span data-i18n="nav.contact">Contact</span></a></li>
+                <li><a href="res/cv.pdf" class="nav-link nav-resume" target="_blank" rel="noopener noreferrer" data-i18n="nav.resume">Resume</a></li>
+                <li class="nav-lang-switcher">
+                    <button class="lang-btn active" data-lang="en" aria-label="English">EN</button>
+                    <button class="lang-btn" data-lang="it" aria-label="Italiano">IT</button>
+                    <button class="lang-btn" data-lang="fr" aria-label="Français">FR</button>
+                    <button class="lang-btn" data-lang="de" aria-label="Deutsch">DE</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-container">
+            <p class="hero-greeting fade-in"><span class="syntax-keyword" data-i18n="hero.greeting.pre">const</span> <span class="syntax-variable" data-i18n="hero.greeting.var">greeting</span> = </p>
+            <h1 class="hero-name fade-in" data-i18n="hero.name" data-i18n-html>"Hi, I'm <span class="highlight">Francesco Ceruzzi</span>";</h1>
+            <h2 class="hero-title fade-in"><span class="syntax-comment">// <span id="typed-text"></span><span class="typed-cursor">|</span></span></h2>
+            <p class="hero-description fade-in" data-i18n="hero.description">
+                Cybersecurity Auditor with experience in penetration testing, static code analysis,
+                and CI/CD pipeline security. I protect government applications and infrastructures
+                with a passion for ethical hacking and innovation.
+            </p>
+            <div class="hero-cta fade-in">
+                <a href="#contact" class="btn btn-primary" data-i18n="hero.cta.contact">Get in Touch</a>
+                <a href="#projects" class="btn btn-outline" data-i18n="hero.cta.projects">View Projects</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <a href="#about" class="scroll-indicator">
+                <span class="scroll-text" data-i18n="hero.scroll">scroll</span>
+                <span class="scroll-line"></span>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">01.</span> <span data-i18n="about.title">About Me</span>
+            </h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p data-i18n="about.p1" data-i18n-html>
+                        I'm a <span class="highlight">Cybersecurity Auditor</span> at
+                        <span class="syntax-string">Sogei S.p.A.</span>, where I protect
+                        government websites and applications through in-depth penetration testing,
+                        static code analysis, and implementation of security practices in CI/CD pipelines.
+                    </p>
+                    <p data-i18n="about.p2" data-i18n-html>
+                        With a Master's degree in Computer Engineering and a
+                        <span class="highlight">CEH (Certified Ethical Hacker)</span> certification,
+                        I combine advanced technical skills with a methodical approach to cybersecurity.
+                        I also have experience in teaching and software development.
+                    </p>
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <span class="detail-label syntax-type" data-i18n="about.location.label">location:</span>
+                            <span class="detail-value" data-i18n="about.location.value">"Rome, Italy"</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label syntax-type" data-i18n="about.email.label">email:</span>
+                            <span class="detail-value" data-i18n="about.email.value">"francescoceruzzi@gmail.com"</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label syntax-type" data-i18n="about.role.label">role:</span>
+                            <span class="detail-value" data-i18n="about.role.value">"Cybersecurity Auditor"</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label syntax-type" data-i18n="about.cert.label">certification:</span>
+                            <span class="detail-value syntax-string" data-i18n="about.cert.value">"CEH — Certified Ethical Hacker"</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-wrapper">
+                        <img src="res/Headshot.jpg" alt="Francesco Ceruzzi" class="headshot-img" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section section-alt" id="experience">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">02.</span> <span data-i18n="exp.title">Experience</span>
+            </h2>
+            <div class="timeline">
+                <div class="timeline-item fade-in">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-title" data-i18n="exp.1.role">Cybersecurity Auditor</h3>
+                            <span class="timeline-company" data-i18n="exp.1.company">@ Sogei S.p.A.</span>
+                        </div>
+                        <span class="timeline-date" data-i18n="exp.1.date">January 2022 — Present · Rome, Italy</span>
+                        <ul class="timeline-details">
+                            <li data-i18n="exp.1.d1">In-depth penetration testing of government websites following the OWASP Top 10 standard, using advanced tools to detect and identify vulnerabilities</li>
+                            <li data-i18n="exp.1.d2">Static code and library analysis for applications written in various programming languages, using tools such as Checkmarx and Nexus IQ</li>
+                            <li data-i18n="exp.1.d3">Python scripting for task automation, process optimization, and custom solution development</li>
+                            <li data-i18n="exp.1.d4">Implementation of robust security measures in Azure Pipelines to ensure integrity and confidentiality of CI/CD processes</li>
+                            <li data-i18n="exp.1.d5">Definition of secure development guidelines for Java, Angular, .NET, iOS, Android, PHP, and React</li>
+                            <li data-i18n="exp.1.d6">Staff training, onboarding, and creation of video tutorials for Security Awareness</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-in">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-title" data-i18n="exp.2.role">Teacher</h3>
+                            <span class="timeline-company" data-i18n="exp.2.company">@ Istituto Omnicomprensivo Statale</span>
+                        </div>
+                        <span class="timeline-date" data-i18n="exp.2.date">December 2019 — December 2021 · Corleto Perticara, Italy</span>
+                        <ul class="timeline-details">
+                            <li data-i18n="exp.2.d1">Teaching educational Virtual Reality and 3D modeling</li>
+                            <li data-i18n="exp.2.d2">Coding through robotics</li>
+                            <li data-i18n="exp.2.d3">Training on the Office suite</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-in">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-title" data-i18n="exp.3.role">Software Developer</h3>
+                            <span class="timeline-company" data-i18n="exp.3.company">@ Graldev S.r.l.</span>
+                        </div>
+                        <span class="timeline-date" data-i18n="exp.3.date">September 2019 — December 2019 · Potenza, Italy</span>
+                        <ul class="timeline-details">
+                            <li data-i18n="exp.3.d1">Frontend and backend development of websites in Java, C#, HTML, JavaScript, and CSS</li>
+                            <li data-i18n="exp.3.d2">Development and debugging of mobile applications in Swift and Android</li>
+                            <li data-i18n="exp.3.d3">Database management with SQL Server and MySQL</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">03.</span> <span data-i18n="proj.title">Projects</span>
+            </h2>
+            <div class="projects-grid">
+                <div class="project-card fade-in">
+                    <div class="project-card-header">
+                        <div class="project-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/FCeruzzi/lab-xss" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="project-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title" data-i18n="proj.1.title">XSS Lab</h3>
+                    <p class="project-description" data-i18n="proj.1.desc">
+                        An educational vulnerable lab for testing and understanding Cross-Site Scripting (XSS) vulnerabilities in Java applications. Implements 5 types of XSS attacks with both vulnerable and secure versions using Spring Boot and Thymeleaf.
+                    </p>
+                    <ul class="project-tech">
+                        <li>Java</li>
+                        <li>Spring Boot</li>
+                        <li>Thymeleaf</li>
+                        <li>SQLite</li>
+                    </ul>
+                </div>
+
+                <div class="project-card fade-in">
+                    <div class="project-card-header">
+                        <div class="project-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/FCeruzzi/lab-sql-injection" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="project-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title" data-i18n="proj.2.title">SQL Injection Lab</h3>
+                    <p class="project-description" data-i18n="proj.2.desc">
+                        A comprehensive vulnerable lab for testing and understanding SQL Injection vulnerabilities in Java applications. Implements 7 types of SQL Injection attacks using Spring Boot and JDBC for educational purposes.
+                    </p>
+                    <ul class="project-tech">
+                        <li>Java</li>
+                        <li>Spring Boot</li>
+                        <li>JDBC</li>
+                        <li>SQLite</li>
+                    </ul>
+                </div>
+
+                <div class="project-card fade-in">
+                    <div class="project-card-header">
+                        <div class="project-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/FCeruzzi/SciRocChallenge" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="project-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title" data-i18n="proj.3.title">SciRoc Challenge 2021</h3>
+                    <p class="project-description" data-i18n="proj.3.desc">
+                        Winner project of the Smart City Robotics Challenge (SciRoc) for sign language interpretation. Development of a robotic system for real-time gesture recognition using Machine Learning and Computer Vision.
+                    </p>
+                    <ul class="project-tech">
+                        <li>Python</li>
+                        <li>Machine Learning</li>
+                        <li>Computer Vision</li>
+                        <li>Jupyter</li>
+                    </ul>
+                </div>
+
+                <div class="project-card fade-in">
+                    <div class="project-card-header">
+                        <div class="project-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/FCeruzzi/triennale" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="project-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                            </a>
+                            <a href="res/Bachelor.pdf" target="_blank" rel="noopener noreferrer" aria-label="Thesis PDF" class="project-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title" data-i18n="proj.4.title">SAR Image Reconstruction</h3>
+                    <p class="project-description" data-i18n="proj.4.desc">
+                        Automated tool for studying Synthetic Aperture Radar (SAR) images, analyzing building ground footprints and their changes over time. Uses images from TerraSAR-X and Sentinel constellations with unsupervised detection algorithms.
+                    </p>
+                    <ul class="project-tech">
+                        <li>Java</li>
+                        <li>Matlab</li>
+                        <li>Signal Processing</li>
+                        <li>SAR</li>
+                    </ul>
+                </div>
+
+                <div class="project-card fade-in">
+                    <div class="project-card-header">
+                        <div class="project-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/FCeruzzi/rs_ply_generator" target="_blank" rel="noopener noreferrer" aria-label="GitHub - rs_ply_generator" class="project-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                            </a>
+                            <a href="https://github.com/FCeruzzi/segnet" target="_blank" rel="noopener noreferrer" aria-label="GitHub - segnet" class="project-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                            </a>
+                            <a href="res/Master.pdf" target="_blank" rel="noopener noreferrer" aria-label="Thesis PDF" class="project-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                            </a>
+                            <a href="https://sites.google.com/view/pixel-wise-segmentation/home-page" target="_blank" rel="noopener noreferrer" aria-label="Project Website" class="project-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title" data-i18n="proj.6.title">Pixel-wise Segmentation</h3>
+                    <p class="project-description" data-i18n="proj.6.desc">
+                        Master's thesis project on pixel-wise segmentation of workpiece images for automotive applications. Uses SegNet deep learning architecture for semantic segmentation, with custom tools for point cloud generation from segmented images.
+                    </p>
+                    <ul class="project-tech">
+                        <li>Python</li>
+                        <li>SegNet</li>
+                        <li>Deep Learning</li>
+                        <li>OpenCV</li>
+                    </ul>
+                </div>
+
+                <div class="project-card fade-in">
+                    <div class="project-card-header">
+                        <div class="project-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/FCeruzzi/JetSki" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="project-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title" data-i18n="proj.5.title">Jet Ski Nitro</h3>
+                    <p class="project-description" data-i18n="proj.5.desc">
+                        A third-person racing game that puts the player at the helm of a jet ski in a tropical paradise. Built with C++ and OpenGL for an immersive gaming experience.
+                    </p>
+                    <ul class="project-tech">
+                        <li>C++</li>
+                        <li>OpenGL</li>
+                        <li>Game Dev</li>
+                        <li>3D</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section section-alt" id="skills">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">04.</span> <span data-i18n="skills.title">Skills</span>
+            </h2>
+            <div class="skills-container">
+                <div class="skills-category fade-in">
+                    <h3 class="skills-category-title">
+                        <span class="syntax-keyword">class</span> <span class="syntax-type" data-i18n="skills.security">Security</span> {
+                    </h3>
+                    <ul class="skills-list">
+                        <li data-i18n="skills.s1">Ethical Hacking</li>
+                        <li data-i18n="skills.s2">Web Penetration Testing</li>
+                        <li data-i18n="skills.s3">SAST / SCA</li>
+                        <li data-i18n="skills.s4">WAPT</li>
+                        <li data-i18n="skills.s5">Secure Coding Guidelines</li>
+                        <li data-i18n="skills.s6">Security Awareness Training</li>
+                    </ul>
+                    <p class="skills-bracket">}</p>
+                </div>
+
+                <div class="skills-category fade-in">
+                    <h3 class="skills-category-title">
+                        <span class="syntax-keyword">class</span> <span class="syntax-type" data-i18n="skills.languages">Languages</span> {
+                    </h3>
+                    <ul class="skills-list">
+                        <li data-i18n="skills.l1">Python</li>
+                        <li data-i18n="skills.l2">Java</li>
+                        <li data-i18n="skills.l3">C# / .NET</li>
+                        <li data-i18n="skills.l4">JavaScript / HTML / CSS</li>
+                        <li data-i18n="skills.l5">C++ / OpenCV</li>
+                        <li data-i18n="skills.l6">SQL / Matlab</li>
+                    </ul>
+                    <p class="skills-bracket">}</p>
+                </div>
+
+                <div class="skills-category fade-in">
+                    <h3 class="skills-category-title">
+                        <span class="syntax-keyword">class</span> <span class="syntax-type" data-i18n="skills.other">Other</span> {
+                    </h3>
+                    <ul class="skills-list">
+                        <li data-i18n="skills.o1">Machine Learning</li>
+                        <li data-i18n="skills.o2">Software Development</li>
+                        <li data-i18n="skills.o3">Project Management</li>
+                        <li data-i18n="skills.o4">Italian — Native</li>
+                        <li data-i18n="skills.o5">English — Fluent</li>
+                        <li data-i18n="skills.o6">French — Basic</li>
+                    </ul>
+                    <p class="skills-bracket">}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section class="section" id="tools">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">05.</span> <span data-i18n="tools.title">Tools</span>
+            </h2>
+            <div class="tools-grid">
+                <div class="tool-card fade-in">
+                    <div class="tool-icon-wrapper">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/python/python-original.svg" alt="Python" class="tool-img" loading="lazy">
+                    </div>
+                    <span class="tool-name">Python</span>
+                </div>
+                <div class="tool-card fade-in">
+                    <div class="tool-icon-wrapper">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/java/java-original.svg" alt="Java" class="tool-img" loading="lazy">
+                    </div>
+                    <span class="tool-name">Java</span>
+                </div>
+                <div class="tool-card fade-in">
+                    <div class="tool-icon-wrapper">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/git/git-original.svg" alt="Git" class="tool-img" loading="lazy">
+                    </div>
+                    <span class="tool-name">Git</span>
+                </div>
+                <div class="tool-card fade-in">
+                    <div class="tool-icon-wrapper">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/azure/azure-original.svg" alt="Azure DevOps" class="tool-img" loading="lazy">
+                    </div>
+                    <span class="tool-name">Azure DevOps</span>
+                </div>
+                <div class="tool-card fade-in">
+                    <div class="tool-icon-wrapper">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/jupyter/jupyter-original.svg" alt="Jupyter" class="tool-img" loading="lazy">
+                    </div>
+                    <span class="tool-name">Jupyter</span>
+                </div>
+                <div class="tool-card fade-in">
+                    <div class="tool-icon-wrapper">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/anaconda/anaconda-original.svg" alt="Anaconda" class="tool-img" loading="lazy">
+                    </div>
+                    <span class="tool-name">Anaconda</span>
+                </div>
+                <div class="tool-card fade-in">
+                    <div class="tool-icon-wrapper">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/androidstudio/androidstudio-original.svg" alt="Android Studio" class="tool-img" loading="lazy">
+                    </div>
+                    <span class="tool-name">Android Studio</span>
+                </div>
+                <div class="tool-card fade-in">
+                    <div class="tool-icon-wrapper">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/linux/linux-original.svg" alt="Kali Linux" class="tool-img" loading="lazy">
+                    </div>
+                    <span class="tool-name">Kali Linux</span>
+                </div>
+                <div class="tool-card fade-in">
+                    <div class="tool-icon-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--orange)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="M9 12l2 2 4-4"></path></svg>
+                    </div>
+                    <span class="tool-name">Burp Suite</span>
+                </div>
+                <div class="tool-card fade-in">
+                    <div class="tool-icon-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--blue)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path><line x1="2" y1="12" x2="22" y2="12"></line></svg>
+                    </div>
+                    <span class="tool-name">Nmap</span>
+                </div>
+                <div class="tool-card fade-in">
+                    <div class="tool-icon-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline><line x1="14" y1="4" x2="10" y2="20"></line></svg>
+                    </div>
+                    <span class="tool-name">Checkmarx</span>
+                </div>
+                <div class="tool-card fade-in">
+                    <div class="tool-icon-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--pink)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line><path d="M7 8h2m2 0h2m2 0h2"></path><path d="M7 11h10"></path></svg>
+                    </div>
+                    <span class="tool-name">Nexus IQ</span>
+                </div>
+                <div class="tool-card fade-in">
+                    <div class="tool-icon-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--yellow)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><path d="M7 8l3 3-3 3"></path><line x1="13" y1="14" x2="17" y2="14"></line></svg>
+                    </div>
+                    <span class="tool-name">Dirbuster</span>
+                </div>
+                <div class="tool-card fade-in">
+                    <div class="tool-icon-wrapper">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/opencv/opencv-original.svg" alt="OpenCV" class="tool-img" loading="lazy">
+                    </div>
+                    <span class="tool-name">OpenCV</span>
+                </div>
+                <div class="tool-card fade-in">
+                    <div class="tool-icon-wrapper">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/matlab/matlab-original.svg" alt="Matlab" class="tool-img" loading="lazy">
+                    </div>
+                    <span class="tool-name">Matlab</span>
+                </div>
+                <div class="tool-card fade-in">
+                    <div class="tool-icon-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--light-blue)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><path d="M11 8a3 3 0 1 0 0 6"></path></svg>
+                    </div>
+                    <span class="tool-name">AppScan</span>
+                </div>
+                <div class="tool-card fade-in">
+                    <div class="tool-icon-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                    </div>
+                    <span class="tool-name">Checkmarx SCA</span>
+                </div>
+                <div class="tool-card fade-in">
+                    <div class="tool-icon-wrapper">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/dotnetcore/dotnetcore-original.svg" alt=".NET" class="tool-img" loading="lazy">
+                    </div>
+                    <span class="tool-name">.NET</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="section section-alt" id="certifications">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">06.</span> <span data-i18n="certs.title">Certifications</span>
+            </h2>
+            <div class="education-grid">
+                <div class="education-card fade-in">
+                    <div class="education-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    </div>
+                    <h3 class="education-degree" data-i18n="certs.1.name">CEH — Certified Ethical Hacker</h3>
+                    <p class="education-field" data-i18n="certs.1.org">EC-Council</p>
+                    <p class="education-school" data-i18n="certs.1.desc">International certification in Ethical Hacking and Penetration Testing. Validates skills in information security assessment, attack vectors identification, and countermeasures implementation.</p>
+                    <span class="education-date" data-i18n="certs.1.date">June 2023</span>
+                </div>
+
+                <div class="education-card fade-in">
+                    <div class="education-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+                    </div>
+                    <h3 class="education-degree" data-i18n="certs.2.name">SciRoc Challenge — Winner</h3>
+                    <p class="education-field" data-i18n="certs.2.org">Sign Language Interpretation Task</p>
+                    <p class="education-school" data-i18n="certs.2.desc">Smart City Robotics Challenge</p>
+                    <span class="education-date" data-i18n="certs.2.date">September 2021</span>
+                </div>
+
+                <div class="education-card fade-in">
+                    <div class="education-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    </div>
+                    <h3 class="education-degree" data-i18n="certs.3.name">Spring Security</h3>
+                    <p class="education-field" data-i18n="certs.3.org">Spring</p>
+                    <p class="education-school" data-i18n="certs.3.desc">Certification in Spring Security framework for securing Java applications.</p>
+                    <span class="education-date" data-i18n="certs.3.date"></span>
+                </div>
+
+                <div class="education-card fade-in">
+                    <div class="education-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    </div>
+                    <h3 class="education-degree" data-i18n="certs.4.name">HCL AppScan DAST</h3>
+                    <p class="education-field" data-i18n="certs.4.org">HCL Software</p>
+                    <p class="education-school" data-i18n="certs.4.desc">Certification in Dynamic Application Security Testing with HCL AppScan.</p>
+                    <span class="education-date" data-i18n="certs.4.date"></span>
+                </div>
+
+                <div class="education-card fade-in">
+                    <div class="education-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    </div>
+                    <h3 class="education-degree" data-i18n="certs.5.name">Checkmarx SAST Certified Engineer Training</h3>
+                    <p class="education-field" data-i18n="certs.5.org">Checkmarx</p>
+                    <p class="education-school" data-i18n="certs.5.desc">Certified Engineer Training in Static Application Security Testing with Checkmarx.</p>
+                    <span class="education-date" data-i18n="certs.5.date"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section" id="education">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">07.</span> <span data-i18n="edu.title">Education</span>
+            </h2>
+            <div class="education-grid">
+                <div class="education-card fade-in">
+                    <div class="education-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 6 3 6 3s3 0 6-3v-5"></path></svg>
+                    </div>
+                    <h3 class="education-degree" data-i18n="edu.1.degree">Master's Degree</h3>
+                    <p class="education-field" data-i18n="edu.1.field">Computer Engineering (M.Sc.)</p>
+                    <p class="education-school" data-i18n="edu.1.school">University of Basilicata</p>
+                    <p class="education-thesis" data-i18n="edu.1.thesis">Thesis: "Pixel wise segmentation of workpiece images for automotive application"</p>
+                    <span class="education-date" data-i18n="edu.1.date">2021</span>
+                </div>
+
+                <div class="education-card fade-in">
+                    <div class="education-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 6 3 6 3s3 0 6-3v-5"></path></svg>
+                    </div>
+                    <h3 class="education-degree" data-i18n="edu.2.degree">Bachelor's Degree</h3>
+                    <p class="education-field" data-i18n="edu.2.field">Computer Science (B.Sc.)</p>
+                    <p class="education-school" data-i18n="edu.2.school">University of Basilicata</p>
+                    <p class="education-thesis" data-i18n="edu.2.thesis">Thesis: "Experiments in reconstructing the RADAR footprint of buildings using sequences of SAR images"</p>
+                    <span class="education-date" data-i18n="edu.2.date">2017</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section section-alt" id="contact">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">08.</span> <span data-i18n="contact.title">Contact</span>
+            </h2>
+            <div class="contact-content">
+                <p class="contact-text">
+                    <span class="syntax-comment" data-i18n="contact.comment">// Want to tell me more?</span><br>
+                    <span data-i18n="contact.text">Don't hesitate to contact me!</span>
+                </p>
+                <a href="mailto:francescoceruzzi@gmail.com" class="btn btn-primary btn-large" data-i18n="contact.btn">
+                    Say Hello
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="social-links">
+                <a href="https://github.com/FCeruzzi" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/francesco-ceruzzi/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </a>
+                <a href="mailto:francescoceruzzi@gmail.com" aria-label="Email">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </a>
+            </div>
+            <p class="footer-text">
+                <span class="syntax-comment" data-i18n="footer.text">// by Francesco Ceruzzi</span>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Side Elements -->
+    <div class="side-element side-left">
+        <a href="mailto:francescoceruzzi@gmail.com" class="side-email">francescoceruzzi@gmail.com</a>
+    </div>
+    <div class="side-element side-right">
+        <div class="side-social">
+            <a href="https://github.com/FCeruzzi" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/francesco-ceruzzi/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+        </div>
+    </div>
+
+    <script src="js/i18n.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
