@@ -70,6 +70,9 @@ At Sogei I perform:
 
 ## 🚀 Projects
 
+### 🎓 [Secure Code Academy](https://github.com/FCeruzzi/secure-code-academy) · [Live](https://fceruzzi.github.io/secure-code-academy/)
+E-learning platform on **secure coding**: micro-courses with interactive theory, quizzes and **live tournaments** with a real-time leaderboard. Static site on GitHub Pages (Eleventy, Alpine.js) backed by a **Cloudflare Worker** API with D1 and Durable Objects.
+
 ### 🔓 [XSS Lab](https://github.com/FCeruzzi/xss-lab)
 Educational vulnerable lab for testing and understanding **Cross-Site Scripting** vulnerabilities in Java. Implements 5 types of XSS attacks (vulnerable + secure versions) with Spring Boot & Thymeleaf.
 
