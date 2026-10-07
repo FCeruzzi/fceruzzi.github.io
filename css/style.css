@@ -630,10 +630,30 @@ img {
 }
 
 /* ===== Projects ===== */
+/* Flex instead of grid so an incomplete last row is centered.
+   Columns follow the old auto-fill minmax(300px, 1fr): 3, 2 or 1. */
 .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
+    container-type: inline-size;
+}
+
+.projects-grid > .project-card {
+    flex: 0 0 100%;
+}
+
+@container (min-width: 620px) {
+    .projects-grid > .project-card {
+        flex-basis: calc((100% - 20px) / 2);
+    }
+}
+
+@container (min-width: 940px) {
+    .projects-grid > .project-card {
+        flex-basis: calc((100% - 2 * 20px) / 3);
+    }
 }
 
 .project-card {
@@ -889,6 +909,30 @@ img {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
+}
+
+/* Certifications: same columns as .education-grid, last row centered */
+.certs-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    container-type: inline-size;
+}
+
+.certs-grid > .education-card {
+    flex: 0 0 100%;
+}
+
+@container (min-width: 630px) {
+    .certs-grid > .education-card {
+        flex-basis: calc((100% - 30px) / 2);
+    }
+}
+
+@container (min-width: 960px) {
+    .certs-grid > .education-card {
+        flex-basis: calc((100% - 2 * 30px) / 3);
+    }
 }
 
 .education-card {
@@ -1164,6 +1208,11 @@ img {
 
     .projects-grid {
         grid-template-columns: 1fr;
+    }
+
+    .projects-grid > .project-card,
+    .certs-grid > .education-card {
+        flex-basis: 100%;
     }
 
     .skills-container {
